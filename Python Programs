@@ -1,10 +1,16 @@
-# 5.Loops
+# 6.print function
 
 Solutions:
           
 if __name__ == '__main__':
-    n = int(input())
-for i in range(n):
-    res=i*i
-    print(res)
-    i+=1
+    
+  def funct(num):
+    for i in range(0,num-1):
+       print(i+1,end="")
+       i+=1
+    return num
+   
+  n = int(input())
+  result=funct(n)
+  print(result)
+
