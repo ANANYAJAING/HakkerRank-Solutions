@@ -1,16 +1,8 @@
-# 6.print function
-
+# 7.Tuples
 Solutions:
           
 if __name__ == '__main__':
-    
-  def funct(num):
-    for i in range(0,num-1):
-       print(i+1,end="")
-       i+=1
-    return num
-   
-  n = int(input())
-  result=funct(n)
-  print(result)
+    n = int(input())
+    integer_list = tuple(map(int, input().split()))
+    print(hash(integer_list))
 
