@@ -1,10 +1,12 @@
-# 13.What's Your Name
+# 14.String split and join
 Solutions:
 
-def print_full_name(first, last):
-    print("Hello {} {}! You just delved into python.".format(first,last))
+def split_and_join(line):
+    line=line.split(" ")
+    line="-".join(line)
+    return line
 if __name__ == '__main__':
-    first_name = input()
-    last_name = input()
-    print_full_name(first_name, last_name)
+    line = input()
+    result = split_and_join(line)
+    print(result)
 
