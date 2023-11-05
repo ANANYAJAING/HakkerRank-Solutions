@@ -1,19 +1,16 @@
-# 15.swap case
+# 16.Capitalize
 Solutions:
 
-def swap_case(s):
-    lst=[]
-    for i in s:
-        if i.isalpha():
-            if i.islower():
-                lst.append(i.upper())
-            else:
-                lst.append(i.lower())
-        else:
-            lst.append(i)
-    return ''.join(lst)
+import math
+import os
+import random
+import re
+import sys
+def solve(s):
+    for name in s.split():
+        s=s.replace(name,name.capitalize())
+    return s
 if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
     s = input()
-    result = swap_case(s)
-    print(result)
-
+    result = solve(s)
