@@ -1,12 +1,19 @@
-# 14.String split and join
+# 15.swap case
 Solutions:
 
-def split_and_join(line):
-    line=line.split(" ")
-    line="-".join(line)
-    return line
+def swap_case(s):
+    lst=[]
+    for i in s:
+        if i.isalpha():
+            if i.islower():
+                lst.append(i.upper())
+            else:
+                lst.append(i.lower())
+        else:
+            lst.append(i)
+    return ''.join(lst)
 if __name__ == '__main__':
-    line = input()
-    result = split_and_join(line)
+    s = input()
+    result = swap_case(s)
     print(result)
 
