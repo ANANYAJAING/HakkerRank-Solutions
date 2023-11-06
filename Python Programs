@@ -1,19 +1,13 @@
-# 17.Find the string
-Solutions:
-
-def count_substring(string, sub_string):
-    ms=len(string)
-    ss=len(sub_string)
-    c=0
-    
-    for i in range(ms-ss+1):
-        if(string[i:(i+ss)]==sub_string):
-            c=c+1
-    return c
-
+# 18.String Vlidation
+Solution:
 if __name__ == '__main__':
-    string = input().strip()
-    sub_string = input().strip()
-    
-    count = count_substring(string, sub_string)
-    print(count)
+    s = input()
+    print(any([i.isalnum() for i in s]))
+    print(any([i.isalpha() for i in s]))
+    print(any([i.isdigit() for i in s]))
+    print(any([i.islower() for i in s]))
+    print(any([i.isupper() for i in s]))
+-------------------------------------------------------------------------------------------------------------------------------
+any function--> if any one of the character is matching for the above function then it return true
+ex:any[1,0]=True
+   any[0,false]=False
