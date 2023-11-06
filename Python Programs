@@ -1,16 +1,19 @@
-# 16.Capitalize
+# 17.Find the string
 Solutions:
 
-import math
-import os
-import random
-import re
-import sys
-def solve(s):
-    for name in s.split():
-        s=s.replace(name,name.capitalize())
-    return s
+def count_substring(string, sub_string):
+    ms=len(string)
+    ss=len(sub_string)
+    c=0
+    
+    for i in range(ms-ss+1):
+        if(string[i:(i+ss)]==sub_string):
+            c=c+1
+    return c
+
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-    s = input()
-    result = solve(s)
+    string = input().strip()
+    sub_string = input().strip()
+    
+    count = count_substring(string, sub_string)
+    print(count)
