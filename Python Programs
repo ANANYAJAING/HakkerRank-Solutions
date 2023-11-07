@@ -1,13 +1,10 @@
-# 18.String Vlidation
-Solution:
+# 19.Mutations
+
+def mutate_string(string, position, character):
+    return string[:position]+character+string[position+1:]
+
 if __name__ == '__main__':
     s = input()
-    print(any([i.isalnum() for i in s]))
-    print(any([i.isalpha() for i in s]))
-    print(any([i.isdigit() for i in s]))
-    print(any([i.islower() for i in s]))
-    print(any([i.isupper() for i in s]))
--------------------------------------------------------------------------------------------------------------------------------
-any function--> if any one of the character is matching for the above function then it return true
-ex:any[1,0]=True
-   any[0,false]=False
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
