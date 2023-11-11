@@ -1,11 +1,16 @@
-# 23.Door Mat Design
+# 24.Text Alignment
 Solutions:
 
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-R,C=map(int,input().split(' '))
+thickness=int(input())
+c='H'
+for i in range(thickness):
+    print((c*i).rjust(thickness-1)+c+(c*i).ljust(thickness-1))
+for i in range(thickness+1):
+    print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))
+for i in range((thickness+1)//2):
+    print((c*thickness*5).center(thickness*6))
+for i in range(thickness+1):
+    print((c*thickness).center(thickness*2)+(c*thickness).center(thickness*6))
+for i in range(thickness):
+    print(((c*(thickness-i-1)).rjust(thickness)+c+(c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))
 
-for i in range(1,R,2):
-    print((".|."*i).center(C,'-'))
-print("WELCOME".center(C,'-'))
-for i in range(R-2,-1,-2):
-    print((".|."*i).center(C,'-'))
