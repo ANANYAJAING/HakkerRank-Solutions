@@ -1,14 +1,10 @@
-# 25.Introduction to sets
+# 26.set.add()
 Solutions:
 
-def average(array):
-    res=sum(set(array))/(len(set(array)))
-    return res
-    
-
-if __name__ == '__main__':
-    n = int(input())
-    arr = list(map(int, input().split()))
-    result = average(arr)
-    print(result)
+num=int(input())
+set1=set()
+for i in range(num):
+    name=input()
+    set1.add(name)
+print(len(set1))
 
