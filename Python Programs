@@ -1,10 +1,17 @@
-# 26.set.add()
+# 27.Set .discard(), .remove() and.pop()
 Solutions:
 
-num=int(input())
-set1=set()
-for i in range(num):
-    name=input()
-    set1.add(name)
-print(len(set1))
-
+n = int(input())
+s = set(map(int, input().split()))
+m=int(input())
+for i in range(m):
+    s1=list(input().split())
+    if s1[0]=='pop':
+        s.pop()
+    elif s1[0]=='remove':
+        s.remove(int(s1[1]))
+    elif s1[0]=='discard':
+        s.discard(int(s1[1]))
+    
+print(sum(s))
+        
