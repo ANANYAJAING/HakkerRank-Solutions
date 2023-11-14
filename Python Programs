@@ -1,17 +1,11 @@
-# 27.Set .discard(), .remove() and.pop()
+# 28.Set .union()
 Solutions:
 
-n = int(input())
-s = set(map(int, input().split()))
+n=int(input())
+n1=set(map(int,input().split()))
 m=int(input())
-for i in range(m):
-    s1=list(input().split())
-    if s1[0]=='pop':
-        s.pop()
-    elif s1[0]=='remove':
-        s.remove(int(s1[1]))
-    elif s1[0]=='discard':
-        s.discard(int(s1[1]))
-    
-print(sum(s))
+m1=set(map(int,input().split()))
+ans=n1.union(m1)
+print(len(ans))
+
         
