@@ -1,11 +1,11 @@
-# 28.Set .union()
+# 29. .intersection()
 Solutions:
 
 n=int(input())
 n1=set(map(int,input().split()))
 m=int(input())
 m1=set(map(int,input().split()))
-ans=n1.union(m1)
+ans=n1.intersection(m1)
 print(len(ans))
 
         
