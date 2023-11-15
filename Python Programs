@@ -1,11 +1,12 @@
-# 29. .intersection()
+# 30 Set .difference()
 Solutions:
 
+# Enter your code here. Read input from STDIN. Print output to STDOUT
 n=int(input())
 n1=set(map(int,input().split()))
 m=int(input())
 m1=set(map(int,input().split()))
-ans=n1.intersection(m1)
+ans=(n1.difference((m1)))
 print(len(ans))
-
-        
+-------------------------------------------------------------------------------------------------------------------------------
+# .difference() means elements which are in n1 but not in m1
