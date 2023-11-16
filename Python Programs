@@ -1,11 +1,16 @@
-# 31 .symmetric_difference()
+# 32.The Captain's Room
 Solutions:
 
-n=int(input())
-n1=set(map(int,input().split()))
-m=int(input())
-m1=set(map(int,input().split()))
-ans=(n1.symmetric_difference((m1)))
-print(len(ans))
--------------------------------------------------------------------------------------------------------------------------------
-# .symmetric_difference() means elements which are in n1 and in m1 but not in both
+num=int(input())
+room=list(map(int,input().split()))
+d={}
+for i in room:
+    if i in d:
+        d[i]+=1
+    else:
+        d[i]=1
+for i in d:
+    if d[i]==1:
+        print(i)
+        break
+
