@@ -1,10 +1,13 @@
-# 33.Check subset
+# 34.Check super subset
 Solutions:
 
-n=int(input())
-for i  in  range(n):
-    set1=input()
-    ele1=set(input().split())
-    Set2=int(input())
-    ele2=set(input().split())
-    print(ele1.issubset(ele2))
+store=set(input().split())
+N=int(input())
+output=True
+for i in range(N):
+    store2=set(input().split())
+    if not store2.issubset(store):
+        output=False
+        if len(store2) >= len(store):
+            output=False
+print(output)
