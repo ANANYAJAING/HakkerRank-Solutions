@@ -1,16 +1,10 @@
-# 32.The Captain's Room
+# 33.Check subset
 Solutions:
 
-num=int(input())
-room=list(map(int,input().split()))
-d={}
-for i in room:
-    if i in d:
-        d[i]+=1
-    else:
-        d[i]=1
-for i in d:
-    if d[i]==1:
-        print(i)
-        break
-
+n=int(input())
+for i  in  range(n):
+    set1=input()
+    ele1=set(input().split())
+    Set2=int(input())
+    ele2=set(input().split())
+    print(ele1.issubset(ele2))
