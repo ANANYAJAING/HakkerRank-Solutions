@@ -1,13 +1,11 @@
-# 34.Check super subset
+# 35.symmetric Difference
 Solutions:
 
-store=set(input().split())
-N=int(input())
-output=True
-for i in range(N):
-    store2=set(input().split())
-    if not store2.issubset(store):
-        output=False
-        if len(store2) >= len(store):
-            output=False
-print(output)
+n1,ele1=(int(input()),input().split())
+m1,ele2=(int(input()),input().split())
+x=set(ele1)
+y=set(ele2)
+res1=x.difference(y)
+res2=y.difference(x)
+output=res1.union(res2)
+print('\n'.join(sorted(output,key=int)))
