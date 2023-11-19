@@ -1,11 +1,21 @@
-# 35.symmetric Difference
+# 36.Set mutations
 Solutions:
 
-n1,ele1=(int(input()),input().split())
-m1,ele2=(int(input()),input().split())
-x=set(ele1)
-y=set(ele2)
-res1=x.difference(y)
-res2=y.difference(x)
-output=res1.union(res2)
-print('\n'.join(sorted(output,key=int)))
+n = int(input())
+A = set(map(int, input().split()))
+N = int(input())
+for i in range(N):
+    commands = input().split()
+    other_sets = set(map(int, input().split()))
+    if commands[0] == "intersection_update":
+        A.intersection_update(other_sets)
+        
+    if commands[0] == "update":
+        A.update(other_sets)
+        
+    if commands[0] == "symmetric_difference_update":
+        A.symmetric_difference_update(other_sets)
+        
+    if commands[0] == "difference_update":
+        A.difference_update(other_sets)
+print(sum(A))
