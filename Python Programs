@@ -1,21 +1,8 @@
-# 36.Set mutations
+# 37.Mod Divmod
 Solutions:
 
-n = int(input())
-A = set(map(int, input().split()))
-N = int(input())
-for i in range(N):
-    commands = input().split()
-    other_sets = set(map(int, input().split()))
-    if commands[0] == "intersection_update":
-        A.intersection_update(other_sets)
-        
-    if commands[0] == "update":
-        A.update(other_sets)
-        
-    if commands[0] == "symmetric_difference_update":
-        A.symmetric_difference_update(other_sets)
-        
-    if commands[0] == "difference_update":
-        A.difference_update(other_sets)
-print(sum(A))
+a=int(input())
+b=int(input())
+print(a//b)
+print(a%b)
+print(divmod(a,b))
