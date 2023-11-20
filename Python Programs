@@ -1,8 +1,12 @@
-# 37.Mod Divmod
+# 38.Mod-powermode
 Solutions:
 
 a=int(input())
 b=int(input())
-print(a//b)
-print(a%b)
-print(divmod(a,b))
+m=int(input())
+print(pow(a,b))
+print(pow(a,b,m))
+--------------------------------------------------------------------------------------------------------------------------------
+# power(a,b,m) means a**b mod m
+                     a**b 'a'power'b' 
+
