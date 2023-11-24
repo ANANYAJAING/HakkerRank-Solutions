@@ -1,12 +1,10 @@
-# 38.Mod-powermode
-Solutions:
+# 39.Polar Coordinates
+Solution:
 
-a=int(input())
-b=int(input())
-m=int(input())
-print(pow(a,b))
-print(pow(a,b,m))
---------------------------------------------------------------------------------------------------------------------------------
-# power(a,b,m) means a**b mod m
-                     a**b 'a'power'b' 
+import cmath
+
+c=complex(input().strip()) 
+res=cmath.polar(c) # This line converts complex to polar form
+print(res[0])
+print(res[1])
 
