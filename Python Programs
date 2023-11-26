@@ -6,8 +6,8 @@ a=int(input())
 b=int(input())
 c=int(input())
 d=int(input())
-res=((pow(a,b))+(pow(c,d)))
-print(res)
+res=((pow(a,b))+(pow(c,d))) or # we can directly print the result like
+print(res)                     # print(((pow(a,b))+(pow(c,d))))
 --------------------------------------------------------------------------------------------------------------------------------
 
 res=((pow(a,b))+(pow(c,d))) means (a power b)+(c power d) 
