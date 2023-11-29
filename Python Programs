@@ -1,8 +1,7 @@
-# 41.Itertools product
+# 42.Itertools permutations
 Solution:
 
-from itertools import product
-a=list(map(int,input().split(' ')))
-b=list(map(int,input().split(' ')))
-for i in product(a,b):
-    print(i,end=" ")
+from itertools import permutations
+s,n=input().split(' ')
+for i in list(permutations(sorted(s),int(n))):
+    print(''.join(i))
