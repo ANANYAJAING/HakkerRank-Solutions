@@ -1,13 +1,8 @@
-# 40.Integers come in all sizes
+# 41.Itertools product
 Solution:
 
-import math
-a=int(input())
-b=int(input())
-c=int(input())
-d=int(input())
-res=((pow(a,b))+(pow(c,d))) or # we can directly print the result like
-print(res)                     # print(((pow(a,b))+(pow(c,d))))
---------------------------------------------------------------------------------------------------------------------------------
-
-res=((pow(a,b))+(pow(c,d))) means (a power b)+(c power d) 
+from itertools import product
+a=list(map(int,input().split(' ')))
+b=list(map(int,input().split(' ')))
+for i in product(a,b):
+    print(i,end=" ")
