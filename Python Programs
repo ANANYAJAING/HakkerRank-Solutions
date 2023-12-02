@@ -1,11 +1,11 @@
-# 44.Itertools combinations_with_replacement
+# 45.Compress the String
 
 Solution:
 
-from itertools import combinations_with_replacement
-s,n=input().split()
-for j in list(combinations_with_replacement(sorted(s),int(n))):
-        print(''.join(j))
+from itertools import *
+n=input()
+for i,j in groupby(n):
+    print(tuple([len(list(j)),int(i)]),end=" ")
    
 
 
