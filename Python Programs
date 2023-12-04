@@ -4,7 +4,6 @@ Solution:
 from collections import Counter
 n=int(input())
 stock=list(map(int,input().split(' ')))
-
 Dict=Counter(stock)
 x=int(input())
 p=0
@@ -14,5 +13,9 @@ for i in range(x):
         Dict[sizes]-=1
         p=p+price
 print(p)
+------------------------------------------------------------------------------------------------------------------------------
+Counter:
+A counter is a container that stores elements as dictionary keys, and their
+counts are stored as dictionary values.
 
 
