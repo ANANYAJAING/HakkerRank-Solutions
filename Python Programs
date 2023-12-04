@@ -1,12 +1,18 @@
-# 45.Compress the String
-
+# 46.collections.counter()
 Solution:
 
-from itertools import *
-n=input()
-for i,j in groupby(n):
-    print(tuple([len(list(j)),int(i)]),end=" ")
---------------------------------------------------------------------------------------------------------------------------------
-Itertools.groupby method calculates the keys for each element present in iterable. It returns key and iterable of grouped items.
+from collections import Counter
+n=int(input())
+stock=list(map(int,input().split(' ')))
+
+Dict=Counter(stock)
+x=int(input())
+p=0
+for i in range(x):
+    sizes,price=map(int,input().split(' '))
+    if Dict[sizes]:
+        Dict[sizes]-=1
+        p=p+price
+print(p)
 
 
