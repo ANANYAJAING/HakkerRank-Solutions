@@ -1,24 +1,24 @@
-# 46.collections.counter()
-Solution:
+Class in Python!
 
-from collections import Counter
-n=int(input())
-stock=list(map(int,input().split(' ')))
-Dict=Counter(stock)
-x=int(input())
-p=0
-for i in range(x):
-    sizes,price=map(int,input().split(' '))
-    if Dict[sizes]:
-        Dict[sizes]-=1
-        p=p+price
-print(p)
-------------------------------------------------------------------------------------------------------------------------------
-Collections:
-Collections in python is a container use to store data and commonly know as Data Structure such as list,tuples,array etc
+--> python is both POP and OOP.
+--> Almost everything in python is a object.
+--> Class blue print for creating an object.
+-->Creating a class include starting with a keyword "class".
+-->Syntax:
+         class <classname>
 
-Counter:
-A counter is a container that stores elements as dictionary keys, and their
-counts are stored as dictionary values.
+Objects in Python!
 
+--> Objects is a instance of class.
+--> Once the class is created ,then object of that class is defined.
+-->Variables in the class are accessed using "dot operator".
+-->Syntax:
+          <objectname>=<classname>()
 
+Example for Class and object:
+-->class Myclass:
+        x=5
+   p1=Myclass()
+   print(p1.x)
+output:
+      5
