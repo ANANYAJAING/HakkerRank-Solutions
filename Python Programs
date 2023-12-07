@@ -1,24 +1,11 @@
-Class in Python!
+47.Collections.nametuple()
+Solution:
 
---> python is both POP and OOP.
---> Almost everything in python is a object.
---> Class blue print for creating an object.
--->Creating a class include starting with a keyword "class".
--->Syntax:
-         class <classname>
-
-Objects in Python!
-
---> Objects is a instance of class.
---> Once the class is created ,then object of that class is defined.
--->Variables in the class are accessed using "dot operator".
--->Syntax:
-          <objectname>=<classname>()
-
-Example for Class and object:
--->class Myclass:
-        x=5
-   p1=Myclass()
-   print(p1.x)
-output:
-      5
+from collections import namedtuple
+n=int(input())
+data=namedtuple("data",input())
+marks_lst=[]
+for i in range(n):
+    marks=int(data(*input().split()).MARKS) 
+    marks_lst.append(marks)
+print(sum(marks_lst)/n)
